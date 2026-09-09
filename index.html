@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080b2b">
-  <meta name="description" content="Nimblis es una aventura de puzles sobre pequeños espíritus que se mueven juntos.">
+  <meta name="description" content="Nimblis es una aventura de puzles sobre pequeños espíritus que se mueven juntos. Beta disponible para iPhone, iPad y Android.">
   <meta property="og:title" content="Nimblis · A Spirit Puzzle Adventure">
-  <meta property="og:description" content="Descubre cómo se relacionan, anticipa cada reacción y guía a todos los Nimblis hasta su altar.">
-  <meta property="og:image" content="assets/nimblis-logo.png">
+  <meta property="og:description" content="Descubre cómo se relacionan, anticipa cada reacción y guía a todos los Nimblis hasta su altar. Prueba la beta en TestFlight y Google Play.">
+  <meta property="og:image" content="assets/app-icon.png">
   <title>Nimblis · A Spirit Puzzle Adventure</title>
   <link rel="icon" href="assets/app-icon.png">
   <link rel="stylesheet" href="styles.css">
@@ -18,6 +18,7 @@
     <a class="wordmark" href="index.html" aria-label="Nimblis, inicio">NIMBLIS</a>
     <nav aria-label="Navegación principal">
       <a href="#como-se-juega">Cómo se juega</a>
+      <a href="#aventura">La aventura</a>
       <a href="#beta">Beta</a>
       <a href="support.html">Soporte</a>
     </nav>
@@ -30,8 +31,11 @@
         <p class="eyebrow">A SPIRIT PUZZLE ADVENTURE</p>
         <img class="hero-logo" src="assets/nimblis-logo.png" alt="Nimblis">
         <h1 id="hero-title">Un movimiento.<br>Muchas reacciones.</h1>
-        <p class="hero-lede">Guía a cada espíritu hasta su altar. Aprende su personalidad, anticipa el tablero y deja que todo encaje.</p>
-        <a class="primary-cta" href="#beta">Seguir el lanzamiento <span aria-hidden="true">↓</span></a>
+        <p class="hero-lede">Guía a cada espíritu hasta su altar. Aprende su personalidad, anticipa el tablero y haz que todos lleguen a casa a la vez.</p>
+        <div class="hero-actions">
+          <a class="primary-cta" href="#beta">Probar la beta <span aria-hidden="true">↓</span></a>
+          <p class="platform-note">Apple TestFlight <i aria-hidden="true"></i> Google Play</p>
+        </div>
       </div>
       <div class="spirit-stage" aria-hidden="true" data-depth>
         <img class="spirit spirit-luma" src="assets/luma.png" alt="">
@@ -46,34 +50,70 @@
       <div class="section-number">01</div>
       <div class="rule-copy" data-reveal>
         <p class="eyebrow">APRENDE OBSERVANDO</p>
-        <h2>Cada espíritu tiene una forma de reaccionar.</h2>
-        <p>Mueve uno y los demás pueden acercarse, alejarse, copiar la dirección o permanecer inmóviles. La previsualización te enseña el resultado antes de confirmar.</p>
+        <h2>Cada Nimbli cambia el tablero a su manera.</h2>
+        <p>Mueve uno y los demás pueden acercarse, alejarse, copiar la dirección o permanecer inmóviles. La previsualización te enseña cada reacción antes de confirmar.</p>
       </div>
       <div class="spirit-line" aria-label="Los cuatro espíritus de Nimblis">
         <figure data-reveal><img src="assets/luma.png" alt="Luma"><figcaption><strong>Luma</strong><span>Se acerca</span></figcaption></figure>
         <figure data-reveal><img src="assets/mimo.png" alt="Mimo"><figcaption><strong>Mimo</strong><span>Se aleja</span></figcaption></figure>
         <figure data-reveal><img src="assets/mirror.png" alt="Mirror"><figcaption><strong>Mirror</strong><span>Copia</span></figcaption></figure>
-        <figure data-reveal><img src="assets/astra.png" alt="Astra"><figcaption><strong>Astra</strong><span>Espera</span></figcaption></figure>
+        <figure data-reveal><img src="assets/astra.png" alt="Astra"><figcaption><strong>Astra</strong><span>Protege</span></figcaption></figure>
       </div>
     </section>
 
-    <section class="journey-section">
-      <div class="journey-art" role="img" aria-label="El jardín nocturno de Nimblis"></div>
-      <div class="journey-copy" data-reveal>
-        <p class="eyebrow">CONSTELLATION GARDEN</p>
-        <h2>150 pequeños puzles. Una curva para aprender, dominar y volver a respirar.</h2>
-        <p>Rutas guiadas, objetivos de tres estrellas y nuevos espíritus presentados paso a paso. Difícil cuando toca; amable siempre.</p>
+    <section class="gameplay-section" aria-labelledby="gameplay-title">
+      <div class="phone-shot phone-shot-main" data-reveal>
+        <img src="assets/game-puzzle.jpg" alt="Un puzle de Nimblis con Luma, Mimo, Mirror y Astra" loading="lazy" decoding="async">
+      </div>
+      <div class="gameplay-copy" data-reveal>
+        <p class="eyebrow">PIENSA ANTES DE MOVER</p>
+        <h2 id="gameplay-title">Fácil de tocar. Difícil de dominar.</h2>
+        <p>Observa las rutas, prueba una jugada y confirma solo cuando todo encaje. Cada nivel combina personalidades, obstáculos y altares en un pequeño desafío hecho a mano.</p>
+        <ul class="feature-list">
+          <li><strong>150 niveles</strong><span>Una campaña completa en diez constelaciones.</span></li>
+          <li><strong>Tres estrellas</strong><span>Resuelve cada puzle con precisión.</span></li>
+          <li><strong>Ayudas opcionales</strong><span>Deshacer, pistas y solución cuando las necesites.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="journey-section" id="aventura">
+      <div class="journey-art" aria-hidden="true"></div>
+      <div class="journey-layout">
+        <div class="journey-copy" data-reveal>
+          <p class="eyebrow">CONSTELLATION GARDEN</p>
+          <h2>Diez constelaciones. Un jardín por restaurar.</h2>
+          <p>La aventura presenta nuevos Nimblis y reglas paso a paso. Completa rutas, recupera estrellas y descubre desafíos especiales sin perder el ritmo tranquilo del jardín.</p>
+        </div>
+        <div class="phone-shot journey-phone" data-reveal>
+          <img src="assets/game-map.jpg" alt="Mapa de una constelación con sus niveles conectados" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="world-section" aria-labelledby="world-title">
+      <div class="world-heading" data-reveal>
+        <p class="eyebrow">MÁS ALLÁ DEL PUZLE</p>
+        <h2 id="world-title">Tu rincón del jardín sigue creciendo.</h2>
+        <p>Personaliza a tus Nimblis, avanza por el Pase Espiritual y participa en eventos y desafíos Tótem.</p>
+      </div>
+      <div class="screen-gallery">
+        <figure data-reveal><img src="assets/game-home.jpg" alt="Pantalla principal actual de Nimblis" loading="lazy" decoding="async"><figcaption><strong>Tu santuario</strong><span>Todo el viaje, desde un mismo lugar.</span></figcaption></figure>
+        <figure data-reveal><img src="assets/game-styles.jpg" alt="Selección de accesorios para personalizar un Nimbli" loading="lazy" decoding="async"><figcaption><strong>Estilos</strong><span>Accesorios, brillos y aspectos para cada Nimbli.</span></figcaption></figure>
+        <figure data-reveal><img src="assets/game-pass.jpg" alt="Recompensas y misiones del Pase Espiritual" loading="lazy" decoding="async"><figcaption><strong>Pase Espiritual</strong><span>Misiones, eventos y nuevas recompensas.</span></figcaption></figure>
       </div>
     </section>
 
     <section class="beta-section" id="beta">
       <div data-reveal>
-        <p class="eyebrow">PRÓXIMAMENTE</p>
-        <h2>La primera beta está despertando.</h2>
-        <p>La versión inicial llegará a TestFlight y Google Play cuando terminen las pruebas de privacidad, rendimiento y dispositivos.</p>
+        <p class="eyebrow">BETA 0.11.1</p>
+        <h2>El jardín ya está abierto para testers.</h2>
+        <p>Prueba Nimblis en iPhone y iPad mediante TestFlight o en Android mediante Google Play. La beta tiene acceso limitado, así que utiliza los enlaces para entrar o solicitar una invitación.</p>
       </div>
       <div class="beta-links" data-reveal>
-        <a href="support.html">Quiero ayudar a probar <span aria-hidden="true">↗</span></a>
+        <a class="store-status" href="mailto:davidlago11@gmail.com?subject=Acceso%20beta%20iOS%20de%20Nimblis"><span class="store-mark">iOS</span><p><strong>Apple TestFlight</strong><small>Solicitar acceso para iPhone o iPad</small></p><b aria-hidden="true">↗</b></a>
+        <a class="store-status" href="https://play.google.com/apps/testing/com.lakedevgames.nimblis" target="_blank" rel="noreferrer"><span class="play-mark" aria-hidden="true">GP</span><p><strong>Google Play</strong><small>Acceder a la prueba de Android</small></p><b aria-hidden="true">↗</b></a>
+        <a href="mailto:davidlago11@gmail.com?subject=Beta%20Nimblis">Contactar con el equipo <span aria-hidden="true">↗</span></a>
         <a href="privacy.html">Cómo cuidamos tus datos <span aria-hidden="true">→</span></a>
       </div>
     </section>
